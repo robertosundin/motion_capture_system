@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <node pkg="mocap_qualisys"
     type="mocap_qualisys_node"
@@ -12,7 +13,7 @@
     <!-- UDP port can be set to -1 to request a TCP stream,
     setting 0 requests a random port, any other positive value 
     requests that specific port -->
-    <param name="udp_port" value="0"/>
+    <param name="udp_port" value="-1"/>
     <param name="qtm_protocol_version" value="18"/>
     <rosparam param="model_list">[]</rosparam>
     <!--remap from="qualisys/F450/odom" to="/f450/odom"/-->
